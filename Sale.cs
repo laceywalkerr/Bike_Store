@@ -5,6 +5,6 @@ namespace Store
     {
         public DateTime SaleDate { get; set; }
         public double SalePrice { get; set; }
-        public string BikeName
+        public string BikeName { get; set; }
     }
 }
