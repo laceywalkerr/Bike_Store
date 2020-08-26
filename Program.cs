@@ -19,7 +19,11 @@ namespace Store
             aBike.Description = "Every Rose has a thorn";
             aBike.Price = 14.5;
 
+            store.AddBike(aBike);
+
             // List products available to sell
+            store.ListBikes();
+
             // Sell a product
         }
     }
