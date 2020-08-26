@@ -19,12 +19,31 @@ namespace Store
             aBike.Description = "Every Rose has a thorn";
             aBike.Price = 14.5;
 
-            store.AddBike(aBike);
+            Bike anotherBike = new Bike();
+            anotherBike.Name = "Mo Speeder";
+            anotherBike.Description = "It's faster than slower bikes";
 
-            // List products available to sell
+            store.AddBike(aBike);
+            store.AddBike(anotherBike);
+
+            // List products available to sel;
+            Console.WriteLine("----All Inventory----")
+            store.ListBikes();
+
+            store.SellBike("Mo Speeder");
+
+            Console.WriteLine("----After Sale----")
             store.ListBikes();
 
             // Sell a product
+
+            store.SellBike("Mo Speeder");
+
+            Console.WriteLine("-----After Sale----");
+            store.ListBikes();
+
+            store.PrintSalesReport();
+
         }
     }
 }
